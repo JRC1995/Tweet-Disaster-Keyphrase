@@ -62,6 +62,10 @@ Nevertheless, the bulk of the work in [process_data.py](https://github.com/JRC19
 
 Inside Models folder, go into any folder corresponding to any of the LSTM-based model you want. Use train_disaster.py to train that corresponding model, and test_disaster.py to evaluate the same. 
 
+### More resources:
+
+More resources including pre-trained models are available [here](https://drive.google.com/drive/folders/1V9aGSqTtV3TzHdrNX8tRbXmxRFXLZMlO?usp=sharing)
+
 
 ### Credits:
 
