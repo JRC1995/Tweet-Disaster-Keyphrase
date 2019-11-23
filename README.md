@@ -12,7 +12,6 @@ https://code.google.com/archive/p/ark-tweet-nlp/downloads
 https://github.com/ianozsvald/ark-tweet-nlp-python
 
 ### Requirements:
----
 
 * Tensorflow v1.12 
   >should work in higher versions, but may require changing a few lines for compatibility with Tensorflow 2.0
