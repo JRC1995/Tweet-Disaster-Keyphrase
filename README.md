@@ -11,6 +11,80 @@ https://code.google.com/archive/p/ark-tweet-nlp/downloads
 [CMUTweetTagger.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/ark_tweet/CMUTweetTagger.py) is a modified version of a python wrapper for ark-tweet-nlp from:  
 https://github.com/ianozsvald/ark-tweet-nlp-python
 
+The datasets provided contain data from the following sources:
+
+```
+@InProceedings{imran2016lrec,
+  author = {Imran, Muhammad and Mitra, Prasenjit and Castillo, Carlos},
+  title = {Twitter as a Lifeline: Human-annotated Twitter Corpora for NLP of Crisis-related Messages},
+  booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
+  year = {2016},
+  month = {may},
+  date = {23-28},
+  location = {Portoroz, Slovenia},
+  publisher = {European Language Resources Association (ELRA)},
+  address = {Paris, France},
+  isbn = {978-2-9517408-9-1},
+  language = {english}
+ }
+```
+```
+ @inproceedings{imran2013practical,
+title={Practical extraction of disaster-relevant information from social media},
+author={Imran, Muhammad and Elbassuoni, Shady and Castillo, Carlos and Diaz, Fernando and Meier, Patrick},
+booktitle={Proceedings of the 22nd international conference on World Wide Web companion},
+pages={1021--1024},
+year={2013},
+organization={International World Wide Web Conferences Steering Committee}
+}
+```
+```
+@article{imran2013extracting,
+title={Extracting information nuggets from disaster-related messages in social media},
+author={Imran, Muhammad and Elbassuoni, Shady Mamoon and Castillo, Carlos and Diaz, Fernando and Meier, Patrick},
+journal={Proc. of ISCRAM, Baden-Baden, Germany},
+year={2013}
+}
+```
+```
+@InProceedings{crisismmd2018icwsm,
+  author = {Alam, Firoj and Ofli, Ferda and Imran, Muhammad},
+  title = { CrisisMMD: Multimodal Twitter Datasets from Natural Disasters},
+  booktitle = {Proceedings of the 12th International AAAI Conference on Web and Social Media (ICWSM)},
+  year = {2018},
+  month = {June},
+  date = {23-28},
+  location = {USA}}
+```
+```
+@inproceedings{firoj_ACL_2018embaddings,
+title={Domain Adaptation with Adversarial Training and Graph Embeddings},
+author={Alam, Firoj and Joty, Shafiq and Imran, Muhammad},
+journal={Proc. of the 56th Annual Meeting of the Association for Computational Linguistics (ACL)},
+year={2018}
+}
+```
+```
+@inproceedings{Olteanu:2015:EUH:2675133.2675242,
+ author = {Olteanu, Alexandra and Vieweg, Sarah and Castillo, Carlos},
+ title = {What to Expect When the Unexpected Happens: Social Media Communications Across Crises},
+ booktitle = {Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work \&\#38; Social Computing},
+ series = {CSCW '15},
+ year = {2015},
+ isbn = {978-1-4503-2922-4},
+ location = {Vancouver, BC, Canada},
+ pages = {994--1009},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/2675133.2675242},
+ doi = {10.1145/2675133.2675242},
+ acmid = {2675242},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {emergency management, social media},
+} 
+```
+
+
 ### Requirements:
 
 * Tensorflow v1.12 
@@ -29,7 +103,7 @@ https://github.com/ianozsvald/ark-tweet-nlp-python
 
 Following the Twitter licenses we can publicly only share the Tweet ids. The train, test, and validation data are provided as [disaster_tweet_id_train.json](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/Data/disaster_tweet_id_train.json), [disaster_tweet_id_test.json](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/Data/disaster_tweet_id_test.json), and [disaster_tweet_id_dev.json](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/Data/disaster_tweet_id_dev.json) respectively. The data is in the form of new-line separated json where each json object is of the format:
 
-`{'tweet_id' 134333535, 'source': 'ABCD Disaster (from XYZ dataset)'}`
+```{'tweet_id' 134333535, 'source': 'ABCD Disaster (from XYZ dataset)'}```
 
 The source value contains enough information about which dataset it originally belonged to and which disaster it is about.  
   
@@ -60,9 +134,9 @@ Pre-processing scripts should be done in the following order:
 3. [preprocess_IPA.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/preprocess_IPA.py) to create word to IPA and phonological feature maps after step 1 is done.
 4. [vectorize_data.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/vectorize_data.py) to prepare the final vectorized data for training/testing/validating after steps 1-3 are done. 
 
-Note, however, process_data.py expects JSON files with full tweets of the following format:
+Note, however, process_data.py expects new-line separated JSON files with full tweets of the following format:
 
-`{'tweet_id' 134333535, 'tweet': 'this is a tweet', 'source': 'ABCD Disaster (from XYZ dataset)'}`
+```{'tweet_id' 134333535, 'tweet': 'this is a tweet', 'source': 'ABCD Disaster (from XYZ dataset)'}```
 
 Nevertheless, the bulk of the work in [process_data.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/process_data.py) is done in the imported (from Utils) preprocess function which only uses a list of tweets as its main argument. So any format of data can be used if one is able to prepare a list of raw tweets to feed into the preprocess function within [process_data.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/process_data.py).
 
