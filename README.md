@@ -16,6 +16,7 @@ Official repository of "On Identifying Hashtags in Disaster Twitter Data" (AAAI 
 * [Tensorflow-Hub v0.1.1](https://www.tensorflow.org/hub/)
   >We used the [Hub module](https://tfhub.dev/google/elmo/2) for [ELMo Embeddings](https://allennlp.org/elmo).
 * [NLTK](https://www.nltk.org/) for lemmatization
+* Numpy
  
 ### Disaster Tweets:
 
