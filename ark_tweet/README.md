@@ -1,3 +1,6 @@
+
+Modified version of: https://github.com/ianozsvald/ark-tweet-nlp-python to make it work with python3+
+
 ark-tweet-nlp-python [no longer supported by Ian]
 =================================================
 
