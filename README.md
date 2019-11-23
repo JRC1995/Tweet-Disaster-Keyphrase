@@ -22,7 +22,7 @@ https://github.com/ianozsvald/ark-tweet-nlp-python
 * [Panphon](https://github.com/dmort27/panphon)  for phonological features
   >https://pypi.org/project/panphon/
 * [Tensorflow-Hub v0.1.1](https://www.tensorflow.org/hub/)
-  >We used the [Hub module](https://tfhub.dev/google/elmo/3) for [ELMo Embeddings](https://allennlp.org/elmo).
+  >We used the [Hub module](https://tfhub.dev/google/elmo/2) for [ELMo Embeddings](https://allennlp.org/elmo).
 * [NLTK](https://www.nltk.org/) for lemmatization
  
 ### Disaster Tweets:
