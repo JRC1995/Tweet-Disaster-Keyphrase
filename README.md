@@ -1,15 +1,15 @@
 # Tweet-Disaster-Keyphrase
----
+
 Official repository of "On Identifying Hashtags in Disaster Twitter Data" (AAAI 2020)
 
 ### Credits:
----
 
 [ark_tweet](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/tree/master/ark_tweet) contains the codes for Tweet tokenization and POS-taging. It comes from here: 
 http://www.cs.cmu.edu/~ark/TweetNLP/
 https://code.google.com/archive/p/ark-tweet-nlp/downloads
 
-[CMUTweetTagger.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/ark_tweet/CMUTweetTagger.py) is a modified version of a python wrapper for ark-tweet-nlp from: https://github.com/ianozsvald/ark-tweet-nlp-python
+[CMUTweetTagger.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/ark_tweet/CMUTweetTagger.py) is a modified version of a python wrapper for ark-tweet-nlp from:  
+https://github.com/ianozsvald/ark-tweet-nlp-python
 
 ### Requirements:
 ---
@@ -27,7 +27,6 @@ https://code.google.com/archive/p/ark-tweet-nlp/downloads
 * [NLTK](https://www.nltk.org/) for lemmatization
  
 ### Disaster Tweets:
----
 
 Following the Twitter licenses we can publicly only share the Tweet ids. The train, test, and validation data are provided as [disaster_tweet_id_train.json](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/Data/disaster_tweet_id_train.json), [disaster_tweet_id_test.json](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/Data/disaster_tweet_id_test.json), and [disaster_tweet_id_dev.json](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/Data/disaster_tweet_id_dev.json) respectively. The data is in the form of new-line separated json where each json object is of the format:
 
@@ -48,7 +47,7 @@ One can also just use the whole dataset from [resource # 2 and resource # 3](htt
 Checking the length is also the way to identify these anomalous entries in general for any need. 
 
 ### Disaster Lexicon:
----
+
 The disaster lexicon used in the paper is provided [here](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/Data/Lexicons/Lexicon.txt).
 
 [Lexicon.pkl](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/Data/Lexicons/Lexicon.pkl) is the processed version of the Lexicon (generated using [process_lexicon.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/Data/Lexicons/process_lexicon.py)), and it is used by other components of the software. 
