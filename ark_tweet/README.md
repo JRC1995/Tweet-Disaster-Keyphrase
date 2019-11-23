@@ -1,5 +1,5 @@
 
-Modified version of: https://github.com/ianozsvald/ark-tweet-nlp-python to make it work with python3+
+CMUTweetTagger.py is a modified version of: https://github.com/ianozsvald/ark-tweet-nlp-python to make it work with python 3+. Copy of original Readme below:
 
 ark-tweet-nlp-python [no longer supported by Ian]
 =================================================
