@@ -6,7 +6,7 @@ Official repository of "On Identifying Hashtags in Disaster Twitter Data" (AAAI 
 ### Requirements:
 
 * Tensorflow v1.12 
-  >should work in higher versions, but may require changing a few lines for compatibility with Tensorflow 2.0
+  >should work in higher versions, but may require changing a few lines for compatibility with Tensorflow 2.0+
 * [Flair](https://github.com/zalandoresearch/flair) 
   >We only used it for loading GloVe Twitter Embeddings in preprocess_vocab.py. It is possible to remove this dependency by changing this file to load the word embeddings from other sources.
 * [Epitran](https://github.com/dmort27/epitran) for IPA features
@@ -35,7 +35,7 @@ I did not find the tweet ids in those datasets so I instead used their unit_id a
 
 One can also just use the whole dataset from [resource # 2 and resource # 3](https://crisisnlp.qcri.org/) and ignore any tweet_id values with length < 11 from our JSON datasets; the pre-processing code will filter them appropriately either way.
 
-Checking the length is also the way to identify these anomalous entries in general for any need. 
+Checking the length is also one way to identify these anomalous entries in general for any need. 
 
 ### Disaster Lexicon:
 
@@ -48,8 +48,8 @@ The disaster lexicon used in the paper is provided [here](https://github.com/JRC
 Pre-processing scripts should be done in the following order:
 
 1. [process_data.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/process_data.py) for initial pre-processing (pos-tagging, annotating based on lexicon, preparing labels etc.)
-2. [preprocess_vocab.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/preprocess_vocab.py) to create vocabularity and prepare embeddings after step 1 is done.
-3. [preprocess_IPA.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/preprocess_IPA.py) to create word to IPA and phonological feature maps after step 1 is done.
+2. [preprocess_vocab.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/preprocess_vocab.py) to create vocabularity and prepare embeddings (after step 1 is done).
+3. [preprocess_IPA.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/preprocess_IPA.py) to create word to IPA maps and word to phonological features maps (after step 1 is done).
 4. [vectorize_data.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/vectorize_data.py) to prepare the final vectorized data for training/testing/validating after steps 1-3 are done. 
 
 Note, however, process_data.py expects new-line separated JSON files with full tweets of the following format:
@@ -72,7 +72,7 @@ https://code.google.com/archive/p/ark-tweet-nlp/downloads
 [CMUTweetTagger.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/ark_tweet/CMUTweetTagger.py) is a modified version of a python wrapper for ark-tweet-nlp from:  
 https://github.com/ianozsvald/ark-tweet-nlp-python
 
-The datasets provided contain data from the following sources data collected from datasets provided in:
+The datasets provided contain data collected from datasets presented by:
 
 ```
 @InProceedings{imran2016lrec,
@@ -145,6 +145,11 @@ The datasets provided contain data from the following sources data collected fro
  keywords = {emergency management, social media},
 } 
 ```
+The relevant data can be found here:  
+
+https://github.com/sajao/CrisisLex/tree/master/data/CrisisLexT6/
+
+https://crisisnlp.qcri.org/
 
 
 ### Cite
