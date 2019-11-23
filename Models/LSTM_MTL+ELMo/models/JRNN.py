@@ -282,7 +282,7 @@ class Joint_Encoders:
         self.S = tf.shape(self.sentences)[1]
         self.D = len(self.word_embeddings[0]) + self.elmo_dims
 
-        elmo = hub.Module("../Embeddings/ELMo/", trainable=True)
+        elmo = hub.Module("https://tfhub.dev/google/elmo/2", trainable=True)
         tokens_input = self.sentences_string
         tokens_length = self.true_seq_lens
         elmo_sentences = elmo(
