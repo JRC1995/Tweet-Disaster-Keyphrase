@@ -64,7 +64,7 @@ Inside Models folder, go into any folder corresponding to any of the LSTM-based 
 
 ### More resources:
 
-More resources including pre-trained models are available [here](https://drive.google.com/drive/folders/1V9aGSqTtV3TzHdrNX8tRbXmxRFXLZMlO?usp=sharing)
+More resources including pre-trained models are available [here](https://drive.google.com/drive/folders/1V9aGSqTtV3TzHdrNX8tRbXmxRFXLZMlO?usp=sharing).
 
 
 ### Credits:
