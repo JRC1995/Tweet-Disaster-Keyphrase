@@ -2,88 +2,6 @@
 
 Official repository of "On Identifying Hashtags in Disaster Twitter Data" (AAAI 2020)
 
-### Credits:
-
-[ark_tweet](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/tree/master/ark_tweet) contains the codes for Tweet tokenization and POS-taging. It comes from here: 
-http://www.cs.cmu.edu/~ark/TweetNLP/
-https://code.google.com/archive/p/ark-tweet-nlp/downloads
-
-[CMUTweetTagger.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/ark_tweet/CMUTweetTagger.py) is a modified version of a python wrapper for ark-tweet-nlp from:  
-https://github.com/ianozsvald/ark-tweet-nlp-python
-
-The datasets provided contain data from the following sources:
-
-```
-@InProceedings{imran2016lrec,
-  author = {Imran, Muhammad and Mitra, Prasenjit and Castillo, Carlos},
-  title = {Twitter as a Lifeline: Human-annotated Twitter Corpora for NLP of Crisis-related Messages},
-  booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
-  year = {2016},
-  month = {may},
-  date = {23-28},
-  location = {Portoroz, Slovenia},
-  publisher = {European Language Resources Association (ELRA)},
-  address = {Paris, France},
-  isbn = {978-2-9517408-9-1},
-  language = {english}
- }
-```
-```
- @inproceedings{imran2013practical,
-title={Practical extraction of disaster-relevant information from social media},
-author={Imran, Muhammad and Elbassuoni, Shady and Castillo, Carlos and Diaz, Fernando and Meier, Patrick},
-booktitle={Proceedings of the 22nd international conference on World Wide Web companion},
-pages={1021--1024},
-year={2013},
-organization={International World Wide Web Conferences Steering Committee}
-}
-```
-```
-@article{imran2013extracting,
-title={Extracting information nuggets from disaster-related messages in social media},
-author={Imran, Muhammad and Elbassuoni, Shady Mamoon and Castillo, Carlos and Diaz, Fernando and Meier, Patrick},
-journal={Proc. of ISCRAM, Baden-Baden, Germany},
-year={2013}
-}
-```
-```
-@InProceedings{crisismmd2018icwsm,
-  author = {Alam, Firoj and Ofli, Ferda and Imran, Muhammad},
-  title = { CrisisMMD: Multimodal Twitter Datasets from Natural Disasters},
-  booktitle = {Proceedings of the 12th International AAAI Conference on Web and Social Media (ICWSM)},
-  year = {2018},
-  month = {June},
-  date = {23-28},
-  location = {USA}}
-```
-```
-@inproceedings{firoj_ACL_2018embaddings,
-title={Domain Adaptation with Adversarial Training and Graph Embeddings},
-author={Alam, Firoj and Joty, Shafiq and Imran, Muhammad},
-journal={Proc. of the 56th Annual Meeting of the Association for Computational Linguistics (ACL)},
-year={2018}
-}
-```
-```
-@inproceedings{Olteanu:2015:EUH:2675133.2675242,
- author = {Olteanu, Alexandra and Vieweg, Sarah and Castillo, Carlos},
- title = {What to Expect When the Unexpected Happens: Social Media Communications Across Crises},
- booktitle = {Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work \&\#38; Social Computing},
- series = {CSCW '15},
- year = {2015},
- isbn = {978-1-4503-2922-4},
- location = {Vancouver, BC, Canada},
- pages = {994--1009},
- numpages = {16},
- url = {http://doi.acm.org/10.1145/2675133.2675242},
- doi = {10.1145/2675133.2675242},
- acmid = {2675242},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {emergency management, social media},
-} 
-```
-
 
 ### Requirements:
 
@@ -143,6 +61,90 @@ Nevertheless, the bulk of the work in [process_data.py](https://github.com/JRC19
 ### Training and Testing:
 
 Inside Models folder, go into any folder corresponding to any of the LSTM-based model you want. Use train_disaster.py to train that corresponding model, and test_disaster.py to evaluate the same. 
+
+
+### Credits:
+
+[ark_tweet](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/tree/master/ark_tweet) contains the codes for Tweet tokenization and POS-taging. It comes from here: 
+http://www.cs.cmu.edu/~ark/TweetNLP/
+https://code.google.com/archive/p/ark-tweet-nlp/downloads
+
+[CMUTweetTagger.py](https://github.com/JRC1995/Tweet-Disaster-Keyphrase/blob/master/ark_tweet/CMUTweetTagger.py) is a modified version of a python wrapper for ark-tweet-nlp from:  
+https://github.com/ianozsvald/ark-tweet-nlp-python
+
+The datasets provided contain data from the following sources data collected from datasets provided in:
+
+```
+@InProceedings{imran2016lrec,
+  author = {Imran, Muhammad and Mitra, Prasenjit and Castillo, Carlos},
+  title = {Twitter as a Lifeline: Human-annotated Twitter Corpora for NLP of Crisis-related Messages},
+  booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
+  year = {2016},
+  month = {may},
+  date = {23-28},
+  location = {Portoroz, Slovenia},
+  publisher = {European Language Resources Association (ELRA)},
+  address = {Paris, France},
+  isbn = {978-2-9517408-9-1},
+  language = {english}
+ }
+```
+```
+ @inproceedings{imran2013practical,
+  title={Practical extraction of disaster-relevant information from social media},
+  author={Imran, Muhammad and Elbassuoni, Shady and Castillo, Carlos and Diaz, Fernando and Meier, Patrick},
+  booktitle={Proceedings of the 22nd international conference on World Wide Web companion},
+  pages={1021--1024},
+  year={2013},
+  organization={International World Wide Web Conferences Steering Committee}
+}
+```
+```
+@article{imran2013extracting,
+  title={Extracting information nuggets from disaster-related messages in social media},
+  author={Imran, Muhammad and Elbassuoni, Shady Mamoon and Castillo, Carlos and Diaz, Fernando and Meier, Patrick},
+  journal={Proc. of ISCRAM, Baden-Baden, Germany},
+  year={2013}
+}
+```
+```
+@InProceedings{crisismmd2018icwsm,
+  author = {Alam, Firoj and Ofli, Ferda and Imran, Muhammad},
+  title = { CrisisMMD: Multimodal Twitter Datasets from Natural Disasters},
+  booktitle = {Proceedings of the 12th International AAAI Conference on Web and Social Media (ICWSM)},
+  year = {2018},
+  month = {June},
+  date = {23-28},
+  location = {USA}
+}
+```
+```
+@inproceedings{firoj_ACL_2018embaddings,
+  title={Domain Adaptation with Adversarial Training and Graph Embeddings},
+  author={Alam, Firoj and Joty, Shafiq and Imran, Muhammad},
+  journal={Proc. of the 56th Annual Meeting of the Association for Computational Linguistics (ACL)},
+  year={2018}
+}
+```
+```
+@inproceedings{Olteanu:2015:EUH:2675133.2675242,
+ author = {Olteanu, Alexandra and Vieweg, Sarah and Castillo, Carlos},
+ title = {What to Expect When the Unexpected Happens: Social Media Communications Across Crises},
+ booktitle = {Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work \&\#38; Social Computing},
+ series = {CSCW '15},
+ year = {2015},
+ isbn = {978-1-4503-2922-4},
+ location = {Vancouver, BC, Canada},
+ pages = {994--1009},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/2675133.2675242},
+ doi = {10.1145/2675133.2675242},
+ acmid = {2675242},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {emergency management, social media},
+} 
+```
 
 
 ### Cite
