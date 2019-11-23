@@ -1,0 +1,61 @@
+[Command: python -u /media/data/AAAI2020_Disaster/Data/data_analysis.py]
+
+
+Total Data:  67288
+Total Training Data:  40130
+Total Validation Data:  8204
+Total Test Data:  18954
+
+
+
+2015_Nepal_Earthquake_dev.tsv (ICSWM_2018): 493
+2015_Nepal_Earthquake_test.tsv (ICSWM_2018): 1462
+2015_Nepal_Earthquake_train.tsv (ICSWM_2018): 2935
+2013_Queensland_Floods_dev.tsv (ICSWM_2018): 398
+2013_Queensland_Floods_test.tsv (ICSWM_2018): 949
+2013_Queensland_Floods_train.tsv (ICSWM_2018): 1594
+2012_Colorado_wildfires-tweets_labeled.csv (CrisisLexT26-v1.0): 623
+2012_Costa_Rica_earthquake-tweets_labeled.csv (CrisisLexT26-v1.0): 191
+2012_Guatemala_earthquake-tweets_labeled.csv (CrisisLexT26-v1.0): 133
+2012_Venezuela_refinery-tweets_labeled.csv (CrisisLexT26-v1.0): 36
+2013_Alberta_floods-tweets_labeled.csv (CrisisLexT26-v1.0): 641
+2013_Australia_bushfire-tweets_labeled.csv (CrisisLexT26-v1.0): 631
+2013_Bohol_earthquake-tweets_labeled.csv (CrisisLexT26-v1.0): 334
+2013_Boston_bombings-tweets_labeled.csv (CrisisLexT26-v1.0): 391
+2013_Colorado_floods-tweets_labeled.csv (CrisisLexT26-v1.0): 696
+2013_LA_airport_shootings-tweets_labeled.csv (CrisisLexT26-v1.0): 603
+2013_Manila_floods-tweets_labeled.csv (CrisisLexT26-v1.0): 434
+2013_Sardinia_floods-tweets_labeled.csv (CrisisLexT26-v1.0): 66
+2013_Singapore_haze-tweets_labeled.csv (CrisisLexT26-v1.0): 281
+2013_Typhoon_Yolanda-tweets_labeled.csv (CrisisLexT26-v1.0): 619
+2013_West_Texas_explosion-tweets_labeled.csv (CrisisLexT26-v1.0): 422
+hurricane_harvey_final_data.tsv (Crisis MMD): 2952
+hurricane_irma_final_data.tsv (Crisis MMD): 3050
+mexico_earthquake_final_data.tsv (Crisis MMD): 904
+a131709.csv (personal-informative-other) (Joplin Tornado 2011) (ISCRAM 2013): 1171
+a121571.csv (informative_caution-infosrc-donation-damage-other) (Joplin Tornado 2011) (ISCRAM 2013): 1109
+a143145.csv (personal-informative-other) (Sandy Hurricane 2011) (SWDM 2013): 513
+a144267.csv (informative_caution-infosrc-donation-damage-other) (Sandy Hurricane 2011) (SWDM 2013): 1
+2013_pakistan_eq.csv (CrisisNLP_labeled_data_crowdflower): 1262
+2014_california_eq.csv (CrisisNLP_labeled_data_crowdflower): 1453
+2014_chile_eq_en.csv (CrisisNLP_labeled_data_crowdflower): 1047
+2014_ebola_virus.csv (CrisisNLP_labeled_data_crowdflower): 1468
+2014_hurricane_odile.csv (CrisisNLP_labeled_data_crowdflower): 992
+2014_india_floods.csv (CrisisNLP_labeled_data_crowdflower): 1183
+2014_mers_cf_labels.csv (CrisisNLP_labeled_data_crowdflower): 1234
+2014_pakistan_floods_cf_labels.csv (CrisisNLP_labeled_data_crowdflower): 1524
+2014_typhoon_hagupit_cf_labels.csv (CrisisNLP_labeled_data_crowdflower): 1453
+2015_cyclone_pam_cf_labels.csv (CrisisNLP_labeled_data_crowdflower): 1328
+2015_nepal_eq_cf_labels.csv (CrisisNLP_labeled_data_crowdflower): 28
+(Ours) Chiapas Earthquake: 2549
+(Ours) Mexico Earthquake: 3742
+(Ours) Harvey Hurricane: 4349
+(Ours) Irma Hurricane: 4246
+2012_Typhoon_Pablo-tweets_labeled.csv (CrisisLexT26-v1.0): 507
+2012_Philipinnes_floods-tweets_labeled.csv (CrisisLexT26-v1.0): 540
+(Ours) Maria Hurricane: 12200
+(Ours) California Fire: 2551
+
+
+
+[Finished in 0.276s]
