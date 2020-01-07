@@ -1,6 +1,7 @@
 # On Identifying Hashtags in Disaster Twitter Data
 
 Official repository of "On Identifying Hashtags in Disaster Twitter Data" (AAAI 2020)
+https://arxiv.org/abs/2001.01323
 
 
 ### Requirements:
@@ -157,7 +158,15 @@ https://github.com/sajao/CrisisLex/tree/master/data/CrisisLexT6/
 https://crisisnlp.qcri.org/
 
 
-### Cite
+### Citation
 
-(Will be updated)
+```
+@InProceedings{RayChowdhury_2020_AAAI,
+author = {Ray Chowdhury,Jishnu and Caragea, Cornelia and Caragea, Doina},
+title = {On Identifying Hashtags in Disaster Twitter Data},
+booktitle = {Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI)},
+year = {2020}
+}
+```
+
 
